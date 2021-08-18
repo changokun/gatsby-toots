@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://sarumino.com",
-    title: "My Gatsby Site",
+    title: "Two tutors toot to toot",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -38,6 +38,13 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: `${__dirname}/blog`,
+      }
     },
   ],
 };
